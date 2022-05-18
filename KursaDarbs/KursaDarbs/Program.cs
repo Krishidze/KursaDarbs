@@ -19,4 +19,14 @@
 
 using KursaDarbs;
 
+PlayField playField = new PlayField();
+Logic logic = new Logic(playField);
+ConsoleKeyInfo PlayerInput;
 Console.WriteLine($"{PlayField.GridLine}");
+Console.WriteLine("Enter where you want to put X with 1-9 keys");
+PlayerInput=Console.ReadKey(true);
+
+
+
+
+Console.WriteLine($"{PlayerInput}");

@@ -8,9 +8,9 @@ namespace KursaDarbs
 // rinda = X*2=
 // kolona = Y*2+1=
 {
-    internal class PlayField
+    public class PlayField
     {
-        CellItems[,] grid = new CellItems[3,3];  
+        CellItems?[,] grid = new CellItems?[3,3];  
        public const string GridLine = @"
 7│8│9
 ─┼─┼─
@@ -19,14 +19,8 @@ namespace KursaDarbs
 1│2│3
 ";
 
-        public CellItems[,] Grid 
-        {
-            get => grid;
-            set
-            {
-                grid = value;
-            }
-        }
+        public CellItems?[,] Grid => grid;                
+        
     }
 
 }
