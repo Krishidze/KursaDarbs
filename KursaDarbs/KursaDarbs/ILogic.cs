@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace KursaDarbs
 {
-    public enum CellItems
+    public interface ILogic
     {
-        O,
-        X,
+        Coordinates? ProcessKey(ConsoleKeyInfo consoleKeyInfo);
+        bool IsGameOver();
+        string PlayerSwitch();
     }
 }

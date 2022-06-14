@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace KursaDarbs
 {
-    public enum CellItems
+    public enum GameCheck
     {
-        O,
-        X,
+        Ongoing,
+        XWon,
+        OWon,
+        Draw,    
+        
     }
 }
